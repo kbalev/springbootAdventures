@@ -52,4 +52,13 @@ public class Game extends Digital{
     public void setAgeRating(int ageRating) {
         this.ageRating = ageRating;
     }
+    @Override
+    public String toString(){
+        return "{" +
+                "\"name\":\""+ title +
+                "\"studio\":\""+ studio +
+                "\"ageRating\":\""+ ageRating +
+                "\"}";
+
+    }
 }

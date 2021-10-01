@@ -52,4 +52,15 @@ public class Book extends Physical {
     public void setContent(String content) {
         this.content = content;
     }
+
+    @Override
+    public String toString(){
+        return "{" +
+                "\"name\":\""+ title +
+                "\"author\":\""+ author +
+                "\"content\":\""+ content +
+                "\"pages\":\""+ pages +
+                "\"}";
+
+    }
 }
