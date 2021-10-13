@@ -1,5 +1,7 @@
 package alexandria;
 
+import io.cucumber.messages.internal.com.google.gson.Gson;
+
 public class Book extends Physical {
 
     private String title;
@@ -55,12 +57,8 @@ public class Book extends Physical {
 
     @Override
     public String toString(){
-        return "{" +
-                "\"name\":\""+ title +
-                "\"author\":\""+ author +
-                "\"content\":\""+ content +
-                "\"pages\":\""+ pages +
-                "\"}";
-
+        String string = "{" +"\"name\":\""+ title +"\", author\":\""+ author +"\", content\":\""+ content +"\", pages\":\""+ pages +"\"}";
+        String json = new  Gson().toJson(string);
+        return json;
     }
 }
