@@ -4,6 +4,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumTest {
     public static void main(String[] args) {
+        //make sure to have geckodriver at the relevant filepath
         System.setProperty("webdriver.gecko.driver","D:\\CodeStuffs\\geckodriver-v0.30.0-win64\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
