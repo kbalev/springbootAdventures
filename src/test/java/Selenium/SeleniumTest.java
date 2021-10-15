@@ -1,8 +1,12 @@
 package Selenium;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumTest {
+    @Test
+    @RepeatedTest(10)
     public static void main(String[] args) {
         //make sure to have geckodriver at the relevant filepath
         System.setProperty("webdriver.gecko.driver","D:\\CodeStuffs\\geckodriver-v0.30.0-win64\\geckodriver.exe");
