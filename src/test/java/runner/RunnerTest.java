@@ -5,6 +5,6 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/resources/features", glue = "src/test/java/StepDefinitions/borrowStepDefinitions")
+@CucumberOptions(features = "src/test/resources/features", glue = "src/test/java/StepDefinitions/borrowStepDefinitions")
 public class RunnerTest {
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumTest {
     @Test
-    @RepeatedTest(10)
+//    @RepeatedTest(10)
     public static void main(String[] args) {
         //make sure to have geckodriver at the relevant filepath
         System.setProperty("webdriver.gecko.driver","D:\\CodeStuffs\\geckodriver-v0.30.0-win64\\geckodriver.exe");
@@ -21,7 +21,7 @@ public class SeleniumTest {
                     } else {
             System.out.println("Verification Failed");
         }
-        driver.close();
+        driver.quit();
         System.exit(0);
     }
 
