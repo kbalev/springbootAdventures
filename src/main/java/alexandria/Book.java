@@ -57,7 +57,7 @@ public class Book extends Physical {
 
     @Override
     public String toString(){
-        String string = "{" +"\"name\":\""+ title +"\", author\":\""+ author +"\", content\":\""+ content +"\", pages\":\""+ pages +"\"}";
+        String string = "{name:"+ title +"\", author\":\""+ author +"\", content\":\""+ content +"\", pages\":\""+ pages +"\"}";
         String json = new  Gson().toJson(string);
         return json;
     }
